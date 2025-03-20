@@ -1,0 +1,34 @@
+# .env.example
+# Copia questo file in .env e popola le variabili con i tuoi valori
+
+# Supabase
+SUPABASE_URL=your-supabase-url
+SUPABASE_ANON_KEY=your-supabase-anon-key
+SUPABASE_SERVICE_KEY=your-supabase-service-key
+
+# Server
+PORT=3000
+NODE_ENV=development
+SESSION_SECRET=your-secret-key
+CLIENT_URL=http://localhost:5173
+
+# Altre configurazioni
+DEFAULT_LANGUAGE=it
+EMAIL_FROM=noreply@thermopolio.com
+
+# client/.env.example
+# Copia questo file in .env e popola le variabili con i tuoi valori
+
+# Ambiente
+VITE_NODE_ENV=development
+
+# Supabase
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+
+# API
+VITE_API_URL=http://localhost:3000/api
+
+# Geolocalizzazione
+VITE_DEFAULT_LAT=45.4642
+VITE_DEFAULT_LNG=9.1900

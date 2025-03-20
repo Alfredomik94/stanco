@@ -1,0 +1,27 @@
+run = "bash -c 'node index.js'"
+hidden = [".config", "package-lock.json"]
+
+[nix]
+channel = "stable-22_11"
+
+[env]
+PORT = "8080"
+
+[server]
+port = 8080
+
+[[ports]]
+localPort = 3000
+
+[[ports]]
+localPort = 3001
+externalPort = 3001
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+exposeLocalhost = true
+
+[[ports]]
+localPort = 8080
+externalPort = 8080
